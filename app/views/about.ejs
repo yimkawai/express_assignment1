@@ -1,0 +1,59 @@
+<!-- views/about.ejs -->
+
+<%- include ('partials/header.ejs') %>
+    <%- include ('partials/main_nav.ejs') %>
+
+        <main>
+            <div class="jumbotron">
+                <!-- Page Title -->
+                <h1>Welcome to <%= title %> Page</h1>
+
+                <!-- Information Section -->
+                <section class="wiper" id="info">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <!-- Profile Picture -->
+                                <img src="img/profile.jpg" alt="Profile Picture"
+                                    class="rounded-circle img-fluid mt-2 px-3" style="width: 200px;">
+
+                                <!-- Name -->
+                                <h2>Ka Wai Yim</h2>
+
+                                <!-- Introduction Paragraphs -->
+                                <p>I am a multi-disciplinary developer and designer based in Toronto, Canada. With
+                                    nearly 5 years of experience, I bring a unique blend of design aesthetics and
+                                    technical skills to my projects. My journey began at OCADU where I majored in
+                                    Graphic Design.</p>
+                                <p>My passion for building beautiful and functional tech solutions led me to explore web
+                                    development and interaction design. I have always been drawn to coding, starting my
+                                    journey as a self-taught HTML & CSS enthusiast, creating custom themes for blogs
+                                    like Xanga. Eventually, I decided to formalize my education in coding and joined
+                                    Centennial.</p>
+                                <p>Outside of coding and design, I enjoy taking my husky, Zombie, on walks, reading, and
+                                    meeting new friends in the industry.</p>
+
+                                <!-- Download CV Button -->
+                                <a href="pdf/KW_Yim_Web.pdf" class="btn btn-primary" target="_blank">Download CV</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Internal CSS Styles -->
+        <style>
+            .container img {
+                margin: 30px 0px;
+            }
+
+            li {
+                list-style-type: none;
+            }
+        </style>
+
+        <%- include ('partials/bottom_nav.ejs') %>
+            <%- include ('partials/footer.ejs') %>
+
+                <!-- File: assignment1, Ka Wai Yim (300756473), 4/10/2023 -->
